@@ -1,0 +1,40 @@
+{"word":"nose",
+    "voa":{
+        "uk":["http://www.wamera.com/voa/0.6666109131183475","http://www.wamera.com/voice/n/nose.mp3"],
+        "us":["http://www.wamera.com/voa/0.10282578901387751","http://dict.youdao.com/dictvoice?audio=nose&type=2"],
+        "gali":["http://www.wamera.com/voa/0.12364826491102576"],
+        "sc":["http://www.wamera.com/voa/0.9009874747134745"]},
+        "exp":"ân. 1 organ above the mouth of a human or animal, used for smelling and breathing. 2 a sense of smell. b ability to detect a particular thing (a nose for scandal). 3 odour or perfume of wine etc. 4 front end or projecting part of a thing, e.g. of a car or aircraft. âv. (-sing) 1 (usu. foll. by about, around, etc.) pry or search. 2 (often foll. by out) a perceive the smell of, discover by smell. b detect. 3 thrust one's nose against or into. 4 make one's way cautiously forward.  by a nose by a very narrow margin.",
+        "xp2":"n.é¼»å­",
+        "ipa":{"uk":"nÉÊz","us":" nÉuz "}}
+    
+ {"word":"nose",
+   "voa":{
+   "uk":["http://www.wamera.com/voa/0.6666109131183475","http://www.wamera.com/voice/n/nose.mp3"],
+   "us":["http://www.wamera.com/voa/0.10282578901387751","http://dict.youdao.com/dictvoice?audio=nose&type=2"],
+   "gali":["http://www.wamera.com/voa/0.12364826491102576"],
+   "sc":["http://www.wamera.com/voa/0.9009874747134745"]},
+   "exp":"—n. 1 organ above the mouth of a human or animal, used for smelling and breathing. 2 a sense of smell. b ability to detect a particular thing (a nose for scandal). 3 odour or perfume of wine etc. 4 front end or projecting part of a thing, e.g. of a car or aircraft. —v. (-sing) 1 (usu. foll. by about, around, etc.) pry or search. 2 (often foll. by out) a perceive the smell of, discover by smell. b detect. 3 thrust one's nose against or into. 4 make one's way cautiously forward.  by a nose by a very narrow margin.","xp2":"n.鼻子","ipa":{"uk":"nəʊz","us":" nəuz "}}
+   
+   
+22:22:30 liuyq: danci$ cat nose
+{"word":"nose","voaĆĀukĆ["http://wġ.wamera.com/Đa/0.6Ĵ6109131183475čęěĝğġwģĥħĩīĭĐice/nŔĊe.mp3"]ĎusėńĜĞĠĢĤĦĨĪĬĮđı.ķ28257890ĺ87Ł1ŃĚŤğdőt.youdaoūĭƃctŐŒ?aƉio=ĉċ&type=2ŝĎgaliŢƀņŦŉŨŌƍŭİĲ12364ųƷĹűŵ6ƣ"scƩŅťňŊũōŬįůŸĸŻŀŀĺǐł]}ĎexpĆ"ân. 1 ăƥn above thǭmƈǯǤfǨ humaǧăǨniǻl, Šed fǾsĦlƧngǿȈbreaǯiȐǡ2Ƿċnċǵ ȌeȎǡbǨbiƧƝǮo deteƐǷpartőulȷǮhșȑ(a ƚǭȊrȢcǼƊl)ǡ3ǤdƈɈǾƟrfǺǭoǶwșǭȱcǡ4ȉront enȈɕɥjȳȹȐ ȶȸȡɃȘȐȄŘgǡɛǷɊɔɈaircĨfƅ ǝvǡ(-sɀ)Ǣ (ŠuǡȊȥ byȨǳȄȷƈɫɺtɡʓprʞȋȖʅhțʕɛȲǧʚlȦʫutʓɃɖŒiǬȾǭȣȎǵȄƃǁǫħʜʞ˃ʶʜȯȱɰɏȾrŠɨɦe'sɄŗǨƥșs˗Ɉștƌ ɣǻkɚn˙˛ĤʞɊʹƗŠlʞɇĤĄǡˋǷɅ˼ɃǬʪɄȷɥw ǻrgș.ŃǙƢćǠé¼»å­Ńiȶē"ĕǛnÉÊzŃŠǛɄ̠uz "}}22:22:34 liuyq: danci$ gedit nose
+22:22:37 liuyq: danci$ 
+
+
+":{"  <===>  ĆĀ
+":  <===>  Ć
+
+ww <==> ġ
+==================================================
+=================================================
+{"word":"nose",
+    "voa":{
+        "uk":["http://www.wamera.com/voa/0.6666109131183475","http://www.wamera.com/voice/n/nose.mp3"],
+        "us":["http://www.wamera.com/voa/0.10282578901387751","http://dict.youdao.com/dictvoice?audio=nose&type=2"],
+        "gali":["http://www.wamera.com/voa/0.12364826491102576"],
+        "sc":["http://www.wamera.com/voa/0.9009874747134745"]},
+        "exp":"—n. 1 organ above the mouth of a human or animal, used for smelling and breathing. 2 a sense of smell. b ability to detect a particular thing (a nose for scandal). 3 odour or perfume of wine etc. 4 front end or projecting part of a thing, e.g. of a car or aircraft. —v. (-sing) 1 (usu. foll. by about, around, etc.) pry or search. 2 (often foll. by out) a perceive the smell of, discover by smell. b detect. 3 thrust one's nose against or into. 4 make one's way cautiously forward.  by a nose by a very narrow margin.",
+        "xp2":"n.鼻子",
+        "ipa":{"uk":"nəʊz","us":" nəuz "}}
+=================================================

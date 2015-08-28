@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name='keywords' content='english, vocabulary' />
+<meta name='description' content='danci' />
+<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1' />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+<script language="JavaScript">
+var mwinWidth = window.innerWidth;
+var mwinHeight = window.innerHeight;
+var mios = navigator.userAgent.match(/(iPad|iPhone|iPod touch)/i);
+var mlang = 'zh';
+
+function getURLParameter(name, url) {
+    if(typeof(url)==='undefined') {
+        url = location.search;
+    }
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(url)||[,""])[1].replace(/\+/g, '%20'))||null
+}
+</script>
+<body>
+<div id='div-ctrl' style='BOTTOM: 5px; POSITION: fixed; CLEAR:right'>
+<button id="btn-too-easy" title='Too Easy' style='FLOAT:left;' class='ctrl'><b>太简单</b></button>
+<button id="btn-i-know" title='i-know' style='FLOAT:right;' class='ctrl'><b>记住了</b><b class='shortcut'>(&rarr;)</b></button>
+<button id="btn-not-know" title='not-know' style='FLOAT:right;' class='ctrl'><b>没记住</b><b class='shortcut'>(&larr;)</b></button>
+<button id="testBtn" title='testBtn' style='FLOAT:right;' class='ctrl'><b>TestBtn</b><b class='shortcut'>(&larr;)</b></button>
+</div>
+<div id='pb-area'/>
+<div id='info-area' style='BACKGROUND-COLOR: white; HEIGHT: 270px; BORDER-STYLE: solid; BORDER-WIDTH:1px; POSITION: absolute; MARGIN-TOP: 5px;'>
+<div id='div-word'></div>
+<div id='div-ipa'></div>
+<div id='div-info'>
+<div id='div-explanation' class='info-area'/>
+</div>
+</div>
+<div style='MARGIN-TOP: 10px;'>
+<b>请输入单词，或者拷贝到这里。 <span style='COLOR:red;'>最多36个单词</span>:</b><br>
+<textarea id='t-words' style='WIDTH: 100%; HEIGHT: 390px;display: none;'></textarea>
+</div>
+<script src='danci-08-13.js'></script>
+<script src='index-08-13.js'></script>
+<script src='test.js'></script>
+</body>
+</html>

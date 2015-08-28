@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name='keywords' content='english, vocabulary' />
+<meta name='description' content='danci' />
+<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1' />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<base target='_self' />
+<title>用耳朵背单词</title>
+<script>
+var mwinWidth = window.innerWidth;
+var mwinHeight = window.innerHeight;
+function getURLParameter(name, url) {
+if(typeof(url)==='undefined') {
+url = location.search;
+}
+return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(url)||[,""])[1].replace(/\+/g, '%20'))||null
+}
+var mios = navigator.userAgent.match(/(iPad|iPhone|iPod touch)/i);
+var mlang = 'zh';
+</script>
+<link rel='stylesheet' href='css/new.css' />
+</head>
+<body>
+<div id='fbtw'>
+</div>
+<div id="container">
+<div id="l-column">
+<div style='MARGIN-TOP: 60px;'>
+<table id='t-zh' class='t-menu'>
+<tr><td id='m-myword'><span>我的单词本</span></td></tr>
+<tr><td id='m-toefl'><span>托福/雅思/GRE单词</span></td></tr>
+<tr><td id='m-46ji'><span>四六级单词</span></td></tr>
+<!-- career
+<tr><td id='m-career'><span>外企工作单词</span></td></tr>
+-->
+<tr><td id='m-abroad'><span>海外生活单词</span></td></tr>
+</table>
+<table id='t-about' class='t-menu' style='MARGIN-TOP: 2em;'>
+<tr><td id='m-danci'><span>继续背单词</span></td></tr>
+<!-- career
+<tr><td id='m-about'><span>关于我们</span></td></tr>
+-->
+<tr><td id='m-contact'><span><a href='mailto:danci.daydayup@gmail.com'>联系我们</a></span></td></tr>
+</table>
+</div>
+</div>
+<div id="c-column">
+<div>
+<img id='logo' style='FLOAT:left;' src='res/pics/daydayup.jpg'/>
+<img id='menu-icon' src='res/pics/menu.jpg'/>
+<div id='header' style='BACKGROUND-COLOR: #665489;'>
+<div id='slogan' style='text-align:center;font-weight:bold; font-family:"Tahoma, Helvetica, Arial, "Microsoft Yahei","微软雅黑", STXihei, "华文细黑", sans-serif;"'>用耳朵背单词</div>
+</div>
+</div>
+<div id='div-danci' class='active-area nodisp'>
+<div id='pb-area'>
+<div style='FONT-WEIGHT: bold; HEIGHT: 20px;'>
+<div id='div-secname' style='POSITION: absolute;'><span id='s-secname'></span><span id='counter' style='MARGIN-LEFT:5px;'></span></div>
+</div>
+<div style='MARGIN-TOP:5px;'>
+<button id="btn-show-word" class='btn-show'>单词信息<b class='shortcut'>(&darr;)</b></button>
+<button id="btn-replay" class='btn-show'>播放语音<b class='shortcut'>(&uarr;)</b></button>
+</div>
+</div>
+<div id='info-area' style='BACKGROUND-COLOR: white; HEIGHT: 270px; BORDER-STYLE: solid; BORDER-WIDTH:1px; POSITION: absolute; MARGIN-TOP: 5px;'>
+<div id='div-word'></div>
+<div id='div-ipa'></div>
+<div id='div-info'>
+<div id='div-explanation' class='info-area'>
+<p style='COLOR: red; FONT-WEIGHT: bold; FONT-SIZE:18px;'>按键信息:</p>
+<ul>
+<li><b>记住了</b>: 记住了当前单词，到下一个词. <b class='shortcut'>快捷键 &rarr;.</b></li>
+<li><b>没记住</b>: 当前单词没有记住，到下一个单词. <b class='shortcut'>快捷键 &larr;.</b></li>
+<li><b>太简单</b>: 当前单词过于简单，到一下单词.</li>
+<li><b>单词信息</b>: 显示单词信息，<span style='COLOR: blue;'>点击一次显示单词解释，点击第二次显示单词拼写及音标</span>.<b class='shortcut'>快捷键 &darr;</b>.</li>
+<li class='shortcut'><b>播放语音</b>: 播放本单词的下一个发音. 快捷键 &uarr; ,或者点击屏幕中央.</li>
+</ul>
+<span style='COLOR: red; FONT-WEIGHT: bold;'>点击屏幕中央（也就是这段文字的区域），播放本单词的下一个发音。</span>
+<br><br>
+<span style='COLOR: red; FONT-WEIGHT: bold; FONT-SIZE:18px;'>请按“记住了”开始背单词。</span>
+</div>
+<br>
+<div id='div-exp2' class='info-area'></div>
+<div id='div-acc' style='POSITION: absolute; TEXT-ALIGN: center; FONT-WEIGHT:bold; COLOR: red;'></div>
+</div>
+</div>
+<div id='div-ctrl' style='BOTTOM: 5px; POSITION: fixed; CLEAR:right'>
+<button id="btn-too-easy" title='Too Easy' style='FLOAT:left;' class='ctrl'><b>太简单</b></button>
+<button id="btn-i-know" title='i-know' style='FLOAT:right;' class='ctrl'><b>记住了</b><b class='shortcut'>(&rarr;)</b></button>
+<button id="btn-not-know" title='not-know' style='FLOAT:right;' class='ctrl'><b>没记住</b><b class='shortcut'>(&larr;)</b></button>
+</div>
+</div>
+<div id='div-mywords' class='active-area nodisp'>
+<div style='MARGIN-TOP: 2em;'>
+<div>
+<b>起个名字先:</b>
+<input id='i-title' type='text' style='WIDTH: 50%; MARGIN-RIGHT: 10px;'></input>
+<button id='btn-go' disabled>Ready---Go</button>
+</div>
+<div style='DISPLAY:none;'>
+Extract words from article online:<br>
+<input id='i-url' type='text'></input>
+<button id='btn-extract'>Extract</button>
+</div>
+<div style='MARGIN-TOP: 10px;'>
+<b>请输入单词，或者拷贝到这里。 <span style='COLOR:red;'>最多36个单词</span>:</b><br>
+<textarea id='t-words' style='WIDTH: 100%; HEIGHT: 390px;'></textarea>
+</div>
+</div>
+</div>
+<div id='div-about' class='active-area nodisp'>
+<div style='MARGIN-TOP: 2em;'>
+世界变得越来越小，人们的交流也更加普遍，更加广泛。英语也成为了事实上的世界语。做为常年生活在海外的华人，无论你在英语国家，还是非英语国家，英语都对我们变得越来越重要。而英语的应用，也从常规的阅读英文报纸看看英语文章，变得越来越互动，需要听懂对方的意思，然后表达我们的看法和意见。这样听懂英语也就成为英语学习的中心。
+听懂英语与“看懂”英语是不一样。我们往往有这种经历，一篇文章，如果我们阅读，我们理解很快，即使一些生僻的词汇，也能通过语境猜测出他们的意思。而一旦让我们听一篇文章，我们可能很难跟上对方的语速。因为听解是很不同于阅读的。阅读大家往往训练的更多，阅读时更加集中精力，因为眼睛在获取信息的优先级要高于耳朵。而且得益于现代的印刷业，很少有错别字。而从听见声音到判断出意思是件更加复杂的过程。即使大家闭上眼睛来提高注意力，但是音响系统是有噪音的，你的周围往往也是也噪音的。更加困难的是，同一个单词，尽管拼写一样，每个人的口音都是不一样的，说出来也是不一样的。
+学习语言没有捷径，就是要多听，多读，多看。而听解往往是华人的短板。这种痛苦的经历也促使我们思考传统英语学习的弊端，也促成了Daydayup Info的成立与发展。Daydayup是一个背单词的在线工具，它方便，快捷。更重要的是Daydayup背单词是以听为基础的，用户首先是听一个单词，反复听，听不同的口音，学习而后理解它的意思，然后是下一个单词。这就一改传统英语学习以阅读为中心，变成更加以听解为中心。同时，为了增加听解得效果，Daydayup会提供几中不同的口音，通过反复聆听不同的口音，让大家记住他的发音，也就能够应付更多的场景。
+</div>
+</div>
+<div id='div-books' class='active-area'>
+<div id='t-toefl' class='t-items'>
+<b>托福(TOEFL)/雅思(IELTS)/GRE</b>
+<hr>
+<table>
+<tr>
+<td>
+<p class='b-title'>TOEFL单词(2015)</p>
+<a class='a-start' href='/?book=toefl/toefl_2015/toefl_2015&t=TOEFL单词' target='_self'><img class='mybook' src='res/pics/mybook.png'></img></a>
+<div class='b-desc'>
+</div>
+</td>
+<td>
+<p class='b-title'>TOEFL词以类记</p>
+<a class='a-start' href='/books/toefl-by-category.html' target='_self'><img class='mybook' src='res/pics/mybook.png'></img></a>
+<div class='b-desc'>
+</div>
+</td>
+<td>
+<p class='b-title'>雅思单词</p>
+<a class='a-start' href='/?book=toefl/ielts&t=雅思单词' target='_self'><img class='mybook' src='res/pics/mybook.png'></img></a>
+<div class='b-desc'>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<p class='b-title'>GRE核心单词</p>
+<a class='a-start' href='/?book=toefl/gre&t=GRE核心单词' target='_self'><img class='mybook' src='res/pics/mybook.png'></img></a>
+<div class='b-desc'>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<!-- 46ji -->
+<div id='t-46ji' class='t-items nodisp'>
+<b>英语四六级</b>
+<hr>
+<table>
+<tr>
+<td>
+<p class='b-title'>英语四级词汇大全</p>
+<a class='a-start' href='/?book=l_6/l_4&t=四级词汇大全' target='_self'><img class='mybook' src='res/pics/mybook.png'></img></a>
+<div class='b-desc'>
+</div>
+</td>
+<td>
+<p class='b-title'>英语六级高频词汇</p>
+<a class='a-start' href='/?book=l_6/l_6&t=六级高频词汇' target='_self'><img class='mybook' src='res/pics/mybook.png'></img></a>
+<div class='b-desc'>
+</div>
+</td>
+</tr>
+</table>
+</div> <!-- 46ji end -->
+<!-- career -->
+<div id='t-career' class='t-items nodisp'>
+<b>工作生活</b>
+<hr>
+<table>
+<tr>
+<td>
+<p class='b-title'>Career</p>
+<a class='a-start' href='/?book=news/test' target='_self'><img class='mybook' src='res/pics/mybook.png'></img></a>
+<div class='b-desc'>
+</div>
+</td>
+</tr>
+</table>
+</div> <!-- career end -->
+<!-- abroad -->
+<div id='t-abroad' class='t-items nodisp'>
+<b>海外生活</b>
+<hr>
+<table>
+<tr>
+<td>
+<p class='b-title'>媒体中的词汇</p>
+<a class='a-start' href='/?book=news/news&t=媒体中的词汇' target='_self'><img class='mybook' src='res/pics/mybook.png'></img></a>
+<div class='b-desc'>
+</div>
+</td>
+<td>
+<p class='b-title'>医院单词</p>
+<a class='a-start' href='/?book=tech/med&t=医院单词' target='_self'><img class='mybook' src='res/pics/mybook.png'></img></a>
+<div class='b-desc'>
+</div>
+</td>
+</tr>
+</table>
+</div> <!-- career end -->
+</div>
+</div>
+<div id="r-column" class='nodisp'>
+</div>
+</div>
+<!-- no display part -->
+<div id='debug-area' style='POSITION:relative; TOP:300px; LEFT=20px;DISPLAY:none'></div>
+<!-- no display part end -->
+<script src='danci.js'></script>
+<script src='index.js'></script>
+</body>
+
